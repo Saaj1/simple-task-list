@@ -1,5 +1,6 @@
 const taskList = [];
 
+//Add a task to the end of the task list.
 const addTask = () => {
   const taskInput = document.getElementById("new-task-input");
   const newTask = taskInput.value.trim();
@@ -10,6 +11,7 @@ const addTask = () => {
   }
 };
 
+//Remove a task from the beginning of the task list.
 const removeFirstTask = () => {
   if (taskList.length > 0) {
     taskList.shift();
@@ -17,6 +19,7 @@ const removeFirstTask = () => {
   }
 };
 
+//Remove a task from the end of the task list.
 const removeLastTask = () => {
   if (taskList.length > 0) {
     taskList.pop();
@@ -24,6 +27,7 @@ const removeLastTask = () => {
   }
 };
 
+//Remove a task from a specific position in the task list.
 const removeTask = () => {
   const taskInput = document.getElementById("remove-task-input");
   const taskIndex = Number(taskInput.value) - 1;
@@ -34,6 +38,7 @@ const removeTask = () => {
   }
 };
 
+//Display the current task list.
 const displayTaskList = () => {
   const taskListElement = document.getElementById("task-list");
   taskListElement.innerHTML = "";
