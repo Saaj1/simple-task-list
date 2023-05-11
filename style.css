@@ -1,39 +1,78 @@
-body {
-  font-family: Arial, sans-serif;
+/* Style for task list container */
+.task-list {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+  padding: 20px;
+  border-radius: 10px;
+  font-family: sans-serif;
+  position: relative;
 }
 
-h1 {
-  margin-bottom: 10px;
-}
-
-label {
-  display: inline-block;
-  width: 80px;
-  margin-right: 10px;
-}
-
-input[type="text"],
-input[type="number"] {
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  margin-right: 10px;
-}
-
-button {
-  padding: 5px 10px;
-  border-radius: 5px;
+/* Style for task input field */
+.task-input {
+  width: 100%;
+  padding: 10px;
   border: none;
-  background-color: #3498db;
-  color: #fff;
-  cursor: pointer;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
-button:hover {
-  background-color: #2980b9;
+/* Style for task list items */
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
 }
 
-li {
-  margin-bottom: 5px;
+/* Style for task delete button */
+#remove-task-btn {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color .3s ease;
+  margin-left: 10px;
+}
+
+#remove-task-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Style for add task button */
+.add-task {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color .3s ease;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.add-task:hover {
+  background-color: #388E3C;
+}
+
+/* Style for task list title */
+.task-list-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style for no tasks message */
+.no-tasks {
+  text-align: center;
+  font-size: 16px;
+  color: #999;
+  margin-top: 20px;
 }
